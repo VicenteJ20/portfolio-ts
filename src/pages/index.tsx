@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Poppins } from '@next/font/google'
 import { Navbar } from '../components/Navbar'
+import { CarouselHome } from '../components/Carousel/CarouselHome'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -18,8 +19,8 @@ const Home: NextPage = () => {
         <title>Home - Vicente Jorquera</title>
       </Head>
       <Navbar />
-      <main className={`min-h-screen w-screen ${poppins.className}`}>
-
+      <main className={`min-h-screen w-screen pt-20 px-4 dark:bg-zinc-900 ${poppins.className}`}>
+        <CarouselHome />
       </main>
     </>
   )
